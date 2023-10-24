@@ -1,0 +1,41 @@
+.item {
+	display: flex;
+	flex-direction: column;
+	max-width: 600px;
+	justify-content: center;
+	margin: 0 auto;
+}
+#title {
+	margin: 0 auto;
+}
+button {
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+.overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.445);
+	z-index: 10;
+}
+.window {
+	background-color: #fff;
+	z-index: 47382479237492;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	left: 50%;
+	top: 100px;
+	transform: translateX(-50%);
+	width: 500px;
+	margin: 200px auto;
+}
+.modalWindow {
+	display: none;
+}
+.modalWindow.active {
+	display: block;
+}
